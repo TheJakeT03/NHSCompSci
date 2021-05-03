@@ -25,7 +25,19 @@ onEvent("playbutton", "click", function(event) {
   }
 });  
 
-
+function resetYellow() {
+    setProperty("YellowSquare", "background-color",rgb(141,137,0)); 
+    setProperty("sSquareYellow", "background-color",rgb(141,137,0));
+  } function resetRed() {
+    setProperty("RedSquare", "background-color",rgb(133,0,0));
+    setProperty("sSquareRed", "background-color",rgb(133,0,0));}
+  function resetBlue() {
+    setProperty("BlueSquare","background-color", rgb(20,0,100));
+    setProperty("sSquareBlue", "background-color",rgb(20,0,100));}
+  function resetGreen() {
+    setProperty("GreenSquare","background-color", rgb(10,96,0));
+    setProperty("sSquareGreen", "background-color",rgb(10,96,0));
+  }
 
 onEvent("playbutton", "click", function( ) {
   setScreen("Gamescreen");
@@ -43,4 +55,5 @@ onEvent("playbutton", "click", function( ) {
     return patternarray;
   }
 });
+
 
